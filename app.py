@@ -12,7 +12,7 @@ user_menu=st.sidebar.radio('Select a option',
 
 df=pd.read_csv(r"matches.csv")
 dfb=pd.read_csv(r"most_runs_average_strikerate.csv")
-dfp=pd.read_excel(r"Players.xlsx")
+dfp=pd.read_excel("Players.xlsx")
 df.drop(columns=['umpire1','umpire2','umpire3'],inplace=True)
 sea=df.groupby('Season')
 ipl_winner=sea['winner'].value_counts()

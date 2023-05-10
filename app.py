@@ -10,9 +10,9 @@ st.title('**IPL  Analysis**')
 user_menu=st.sidebar.radio('Select a option',
                  ('IPL Matches','Batsmen Statistics','Players'))
 
-df=pd.read_csv(r"C:\Users\shobh\Desktop\Analytics_foundation\DEMO\ipl\matches.csv")
-dfb=pd.read_csv(r"C:\Users\shobh\Desktop\Analytics_foundation\DEMO\ipl\most_runs_average_strikerate.csv")
-dfp=pd.read_excel(r"C:\Users\shobh\Desktop\Analytics_foundation\DEMO\ipl\Players.xlsx")
+df=pd.read_csv(r"matches.csv")
+dfb=pd.read_csv(r"most_runs_average_strikerate.csv")
+dfp=pd.read_excel(r"Players.xlsx")
 df.drop(columns=['umpire1','umpire2','umpire3'],inplace=True)
 sea=df.groupby('Season')
 ipl_winner=sea['winner'].value_counts()

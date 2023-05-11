@@ -3,7 +3,7 @@ import numpy as np
 import streamlit as st
 from matplotlib import pyplot as plt
 import plotly.offline as pyo
-pyo.init_notebook_mode()
+
 import plotly.express as px
 
 
